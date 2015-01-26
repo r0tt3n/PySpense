@@ -19,7 +19,7 @@ print(""" ____ _  _ ____ ____ ____ __ _ ____ ____
 (  _ ( \/ / ___(  _ (  __(  ( / ___(  __)
  ) __/)  /\___ \) __/) _)/    \___ \) _) 
 (__) (__/ (____(__) (____\_)__(____(____)""")
-print('Welcome to PySpense v0.0.3 by G. C. Gerba')
+print('Welcome to PySpense v1 by G. C. Gerba')
 print()
 #define monthly income
 print()
