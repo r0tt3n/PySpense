@@ -1,0 +1,8 @@
+PySpense is a simple program for keeping track of your budget by calculating
+your monthly income vs. monthly expenses.
+
+A file of your income, expenses, and disposable income after expenses is
+written to a file called expenses.txt in the folder where the script was run
+from.
+
+It is also my very first program in my very first language. ¯\_(ツ)_/¯
