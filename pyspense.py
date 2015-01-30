@@ -3,6 +3,8 @@
 expname = []
 expcost = []
 #functions go here
+
+
 def addexpense():
     expensename = input('What is the name of your expense?:')
     while True:
@@ -40,7 +42,7 @@ while True:
         break
     else:
         print('Please enter 1 or 2')
-monthlypay = float(paycheck) * int(time)        
+monthlypay = float(paycheck) * int(time)
 print()
 print()
 print()
@@ -51,7 +53,7 @@ print('Answer no to finish adding expenses.')
 while True:
     checkyn = input('Add an expense? y/n:')
     if checkyn == 'y':
-        addexpense(); 
+        addexpense()
     elif checkyn == 'n':
         break
     else:
@@ -61,21 +63,21 @@ print()
 print()
 print("Ok! Here is a rundown of your monthly expenses. \nThis has been saved to a file called 'expenses.txt' for future reference")
 print()
-file1 = open('expenses.txt','w+')
+file1 = open('expenses.txt', 'w+')
 file1.write("Here is a list of your monthly expenses...\n")
 file1.write("You make $%s total a month\n" % (monthlypay))
 print("Here is a list of your monthly expenses...\n")
 print("You make $%s total a month\n" % (monthlypay))
-for x,y in zip(expname,expcost):
-    file1.write(str(x) + str(" $") + str(y) +str('\n'))
+for x, y in zip(expname, expcost):
+    file1.write(str(x) + str(" $") + str(y) + str('\n'))
     print(str(x) + str(" $") + str(y))
 file1.close()
-file1 = open('expenses.txt','a')
+file1 = open('expenses.txt', 'a')
 totalexpcost = 0
 for y in expcost:
-    totalexpcost = totalexpcost + y    
-print("Total: $" +str(totalexpcost))
-file1.write("Total: $" +str(totalexpcost))
+    totalexpcost = totalexpcost + y
+print("Total: $" + str(totalexpcost))
+file1.write("Total: $" + str(totalexpcost))
 disposable = monthlypay - totalexpcost
 print('You have $%s disposable income each month' % (disposable))
 file1.write("\n")
